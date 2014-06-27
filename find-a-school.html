@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>find-a-school</title>
+		<meta name="author" content="nboor" />
+		<!-- Date: 2013-06-21 -->
+	</head>
+	<body>
+		<div style="float: left; margin-right: 20px; width: 369px; padding: 2em;">
+			<form action="http://schoolsfinder.direct.gov.uk/school-location-search-results/" method="get">
+				<fieldset>
+					<h2>Find schools by location</h2>
+					<p>
+						Enter a postcode or place name to search the official database of schools in England. The database includes primary, secondary, special needs, state and private schools.
+						<br>
+						<sup style="color: red;">(There are currently some problems with postcode search so you may wish to start with a placename.)</sup>
+					</p>
+					<div id="formRow1">
+						<label for="txtLocation">Location:</label>
+						<input value="" maxlength="100" name="searchString" id="txtLocation" class="ac_input ignore" autocomplete="off" type="text">
+					</div>
+					<div id="formRow2">
+						<label for="ddlDistance">Distance:</label>
+						<select name="distanceValue" id="ddlDistance">
+							<option value="1">1 mile</option>
+							<option value="3" selected="selected">3 miles</option>
+							<option value="5">5 miles</option>
+							<option value="10">10 miles</option>
+							<option value="15">15 miles</option>
+							<option value="25">25 miles</option>
+							<option value="50">50 miles</option>
+						</select>
+					</div>
+					<div id="formBtn">
+						<input value="Find schools" name="sbtFindSchools" id="sbtFindSchools" type="submit">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<!-- Search by school name -->
+		<div style="float: left; margin-right: 20px; width: 369px; padding: 2em;">
+			<form action="http://schoolsfinder.direct.gov.uk/school-name-search-results/" method="get">
+				<fieldset>
+					<h2>Find school by name</h2>
+					<p>
+						If you know the specific school you are interested in you can find it by entering its name in the box provided.
+					</p>
+					<div id="formRow1a">
+						<label for="txtSchoolName">Name:</label>
+						<input value="" maxlength="100" name="searchString" id="txtSchoolName" class="ac_input ignore" autocomplete="off" type="text">
+					</div>
+					<div id="formBtn1a">
+						<input value="Find school" name="sbtFindSchool" id="sbtFindSchool" type="submit">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+	</body>
+</html>
+

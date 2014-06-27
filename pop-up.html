@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>pop-up</title>
+		<meta name="author" content="nboor" />
+		<!-- Date: 2012-11-06 -->
+	</head>
+	<body>
+		<div style="border: 1px solid black; margin: 0.5em; padding: 0.5em; text-align: left; width: 32em; background-color: rgb(255, 255, 204); position: relative; top: 2em; left: 2em; visibility: visible; z-index: 99" id="message">
+			<div style="margin: 0pt; padding: 0pt; text-align: right; float: right;" onclick="document.getElementById('message').style.visibility='hidden';float:right;">
+				Close [<span style="text-decoration: underline; cursor: pointer;">X</span>]
+			</div>
+			<h2 style="margin: 0pt; padding: 0pt;"> Have you read thisweek today? </h2>
+			<div style="padding: 0em 0em 0.2em 0em;">
+				Make sure you read thisweek everyday to keep up-to-date with what’s going on across GCC. The features include:
+			</div>
+			<div style="padding: 0em; width: 100%;">
+				<div style="padding: 0em; float: left;">
+					<ul style="padding-top: 0pt; padding-bottom: 0pt;">
+						<li>
+							Daily Top 5 scrolling news feed
+						</li>
+						<li>
+							Main news story
+						</li>
+						<li>
+							Marketplace
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="padding-bottom: 0.4em;">
+				Don’t forget - you can submit your own articles!
+				<br>
+				[<a href="http://thisweek/">Take me to it!</a>] <span style="text-align: right; padding-top: 0.2em; padding-bottom: 0pt;" onclick="document.getElementById('message').style.visibility='hidden'">[<span style="text-decoration: underline; color: blue; cursor: pointer;">Not now thanks.</span>]</span>
+			</div>
+		</div>
+
+	</body>
+</html>
+

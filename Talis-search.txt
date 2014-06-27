@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+  <div class="selector greysurround">
+      <div class="title">
+        Find a Library
+      </div>
+      <form method="get" action="index.aspx">
+        <div>
+          <label for="articleid">Jump to:</label><select id="articleid" name="articleid">
+            <optgroup label="Gloucester area libraries">
+              <option value="106207">
+                [Name of library]
+              </option>
+            </optgroup>
+            <optgroup label="Cheltenham area libraries">
+              <option value="106213">
+                [Name of library]
+              </option>
+              <option value="107029">
+                Cheltenham( including Children's library)
+              </option>
+              <option value="107040">
+                Bishops Cleeve Library and Children's Centre
+              </option>
+              <option value="107044">
+                Brockworth Library
+              </option>
+              <option value="107045">
+                Charlton Kings
+              </option>
+            </optgroup>
+            <optgroup label="Tewkesbury area libraries">
+              <option value="106214">
+                [Name of library]
+              </option>
+            </optgroup>
+            <optgroup label="Stroud area libraries">
+              <option value="106215">
+                [Name of library]
+              </option>
+            </optgroup>
+            <optgroup label="Cotswold area libraries">
+              <option value="106216">
+                [Name of library]
+              </option>
+            </optgroup>
+            <optgroup label="Forest of Dean area libraries">
+              <option value="107041">
+                Cinderford
+              </option>
+            </optgroup>
+            <optgroup label="Activites in libraries">
+              <option value="106227">
+                [Activity details]
+              </option>
+              <option value="106739">
+                Baby Bounce and Rhyme
+              </option>
+              <option value="106740">
+                Story time
+              </option>
+              <option value="106741">
+                Computer Buddy
+              </option>
+              <option value="106761">
+                Housebound Library Service
+              </option>
+              <option value="106762">
+                Library Club
+              </option>
+              <option value="106763">
+                Reading Group
+              </option>
+            </optgroup>
+          </select><input type="submit" value="Go" />
+        </div>
+      </form>
+    </div>
+
+    <div class="selector greysurround" id="searchBox">
+		<span class="corner tl"></span><span class="corner tr"></span>
+		<div class="title">
+			Search the Library database
+		</div>
+		<form id="searchform" method="get" action="http://prism.talis.com/gloucestershire/items">
+        <div>
+			<label id="jslabel" class="hidden" for="s">Search the library catalogue</label>
+			<input id="s" maxlength="1000" name="query" value="" />
+			<input id="searchsubmit" type="submit" value="Search" /> 
+			<a id="advanced-search-link" title="Advanced Search" href="http://prism.talis.com/gloucestershire/advancedsearch" name="advanced-search-link">More search options</a>
+        </div>
+      </form>
+	  <span class="corner bl"></span><span class="corner br"></span>
+    </div>
+
+    <div id="searchBox">
+      <form id="searchform" method="get" action="items">
+        <div class="formElement">
+          <label id="jslabel" class="hidden" for="s">Search the library catalogue</label>
+          <input id="s" maxlength="1000" name="query" value="" />
+          <input id="searchsubmit" type="submit" value="Search" /> 
+		  <a id="advanced-search-link" title="Advanced Search" href="http://prism.talis.com/gloucestershire/advancedsearch" name="advanced-search-link">More search options</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

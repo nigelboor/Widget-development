@@ -1,0 +1,126 @@
+<script type='text/javascript'>function redraw() {
+        hideAll();
+        disableAll();
+        var search_type = document.getElementById("service_selector").value;
+        switch (search_type) {
+            case'schools':
+                document.getElementById('schools_div').style.display = 'block';
+                document.getElementById('schools_search_form').action = 'http://schoolsfinder.direct.gov.uk/search-results/';
+                document.getElementById('schools_location').disabled = false;
+                break;
+            case'centres':
+                document.getElementById('centres_div').style.display = 'block';
+                document.getElementById('schools_search_form').action = 'http://childrenscentresfinder.direct.gov.uk/childrens-centres-search-results/';
+                document.getElementById('centres_location').disabled = false;
+                break;
+            case'nurseries':
+                document.getElementById('nurseries_div').style.display = 'block';
+                document.getElementById('schools_search_form').action = 'http://childcarefinder.direct.gov.uk/childcare-search-results/';
+                document.getElementById('nurseries_location').disabled = false;
+                break;
+            case'services':
+                document.getElementById('services_div').style.display = 'block';
+                document.getElementById('schools_search_form').action = 'http://familyservices.direct.gov.uk/Family-Services-Search-results/';
+                document.getElementById('services_service').disabled = false;
+                document.getElementById('services_searchstring').disabled = false;
+                break;
+        }
+        return true;
+    }
+    function hideAll() {
+        document.getElementById('schools_div').style.display = 'none';
+        document.getElementById('centres_div').style.display = 'none';
+        document.getElementById('nurseries_div').style.display = 'none';
+        document.getElementById('services_div').style.display = 'none';
+        return true;
+    }
+    function disableAll() {
+        document.getElementById('schools_location').disabled = true;
+        document.getElementById('centres_location').disabled = true;
+        document.getElementById('nurseries_location').disabled = true;
+        document.getElementById('services_service').disabled = true;
+        document.getElementById('services_searchstring').disabled = true;
+        return true;
+    }
+    redraw();</script>
+<div style="float: left; padding: 0 16px 0 0;">
+    <!--[if!IE]><!-->
+    <div id="schools_widget"style="width: 200px; max-width: 200px; overflow: hidden; background-color: #ffffff; font-family: Ariel, Helvetica, sans-serif; font-size: 9pt; padding: 8px 12px 5px 12px; margin: 0; text-align: left; border: 1px solid #d7d7d7; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;">
+        <!--<![endif]-->
+        <!--[if IE]><div id="schools_widget"style="width: 220px; max-width: 220px; overflow: hidden; background-color: #ffffff; font-family: Ariel, Helvetica, sans-serif; font-size: 9pt; padding: 8px 12px 5px 12px; margin: 0; text-align: left; border: 1px solid #d7d7d7; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;"><![endif]-->
+        <div id="dg_logo_div"style="float: left; width: 50%; text-align: left; margin: 10px 0 10px 0; padding: 0;">
+            <img src="http://innovate-apps.direct.gov.uk/dcsf/widgets/schoolsearch/img/dg_logo.png"id="dg_logo"alt="Directgov logo"width="150"height="45"style="margin: 0; padding: 0;"/>
+        </div>
+        <form target="_new"method="get"id="schools_search_form"action="http://schoolsfinder.direct.gov.uk/search-results/"onsubmit=""style="margin: 0; padding: 0;">
+            <div id="header"style="font-weight: bold; font-size: 10pt; margin: 7px 0 10px 0; padding: 0; clear: both;">Search for schools,&#32;childcare and other family services
+            </div> 
+            <label id="service_selector_text"for="service_selector"style="margin: 6px 0 6px 0; padding: 0; display: block;">What are you looking for?
+            </label> 
+            <select id="service_selector"style="margin: 0 0 6px 0; padding: 0; width: 98%;"onchange="redraw();"> 
+                <option value="schools">Schools
+                </option> 
+                <option value="centres">Sure Start Children&#146;s Centres
+                </option> 
+                <option value="nurseries">Childcare and nurseries
+                </option> 
+                <option value="services">Family services
+                </option>
+            </select>
+            <div id="schools_div">
+                <label id="searchstring_text"for="searchstring"style="margin: 6px 0 6px 0; padding: 0; display: block;">Postcode,&#32;place or school name:
+                </label> 
+                <input type="text"name="searchstring"id="schools_location"value="eg Scarborough"onfocus="if (this.value == 'eg Scarborough') {
+                    this.value = '';
+                    this.style.color = '#000000'
+                }
+                ;"style="margin: 0 0 6px 0; padding: 0; width: 98%; color: #999999;"/>
+            </div>
+            <div id="centres_div"style="display:none;"> 
+                <label id="searchstring_text"for="searchstring"style="margin: 6px 0 6px 0; padding: 0; display: block;">Postcode,place or centre name:
+                </label> 
+                <input type="text"name="searchstring"id="centres_location"value="eg Scarborough"onfocus="if (this.value == 'eg Scarborough') {
+                    this.value = '';
+                    this.style.color = '#000000'
+                }
+                ;"style="margin: 0 0 6px 0; padding: 0; width: 98%; color: #999999;"disabled="disabled"/>
+            </div>
+            <div id="nurseries_div"style="display:none;"> 
+                <label id="searchstring_text"for="searchstring"style="margin: 6px 0 6px 0; padding: 0; display: block;">Postcode or place:
+                </label>
+                <input type="text"name="searchstring"id="nurseries_location"value="eg Scarborough"onfocus="if (this.value == 'eg Scarborough') {
+                    this.value = '';
+                    this.style.color = '#000000'
+                }
+                ;"style="margin: 0 0 6px 0; padding: 0; width: 98%; color: #999999;"disabled="disabled"/>
+            </div>
+            <div id="services_div"style="display:none;"> 
+                <label id="service_text"for="service"style="margin: 6px 0 6px 0; padding: 0; display: block;">Service:
+                </label> 
+                <input type="text"name="service"id="services_service"value="eg outdoor activities"onfocus="if (this.value == 'eg outdoor activities') {
+                    this.value = '';
+                    this.style.color = '#000000'
+                }
+                ;"style="margin: 0 0 6px 0; padding: 0; width: 98%; color: #999999;"disabled="disabled"/> 
+                <label id="searchstring_text"for="searchstring"style="margin: 6px 0 6px 0; padding: 0; display: block;">Postcode or place:
+                </label>
+                <input type="text"name="searchstring"id="services_searchstring"value="eg Scarborough"onfocus="if (this.value == 'eg Scarborough') {
+                    this.value = '';
+                    this.style.color = '#000000'
+                }
+                ;"style="margin: 0 0 6px 0; padding: 0; width: 98%; color: #999999;"disabled="disabled"/>
+            </div>
+            <div id="go_button"style="margin: 0 4px 0 0; padding: 0; text-align: right;"> 
+                <input type="image"src="http://innovate-apps.direct.gov.uk/dcsf/widgets/schoolsearch/img/btn_search_eng.png"alt="button to submit form"title="click to search"style="margin: 0; padding: 0;"/>
+            </div> 
+            <input type="hidden"name="type"value="Primary,Secondary"/> 
+            <input type="hidden"name="Specialism"value="0"/> 
+            <input type="hidden"name="agefrom"value="0"/> 
+            <input type="hidden"name="ageto"value="0"/> 
+            <input type="hidden"name="distanceValue"value="5"/> 
+            <input type="hidden"name="distanceMeasure"value="miles"/> 
+            <input type="hidden"name="WidgetId"value="47"/> 
+            <input type="hidden"name="widgetFilter"value=""/> 
+            <input type="hidden"name="Criteria"value="1"/>
+        </form>
+    </div>
+</div>

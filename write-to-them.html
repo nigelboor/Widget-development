@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>write-to-them</title>
+  <meta name="description" content="">
+  <meta name="author" content="Nigel Boor">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+<body>
+  <div>
+    <header>
+      <h1>write-to-them</h1>
+    </header>
+    <nav>
+      <p><a href="/">Home</a></p>
+      <p><a href="/contact">Contact</a></p>
+    </nav>
+
+    <div>
+      <form action="https://www.writetothem.com/" method="get" name="postcodeForm" id="postcodeForm" onsubmit="trackFormSubmit(this, 'PostcodeSearch', 'Submit'); return false;"><div id="postcodebox"><label for="pc"><b>First, enter your UK postcode</b></label>&nbsp;&nbsp;<div class="row collapse">
+        <div class="small-10 columns">
+          <input id="pc" name="pc" value="" placeholder="SW1H 9NB" type="text">
+        </div>
+        <div class="small-2 columns">
+          <input class="button success prefix" value="Go" type="submit">
+        </div>
+      </div><input name="fyr_extref" value="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0CDUQFjAA&amp;url=https%3A%2F%2Fwww.writetothem.com%2F&amp;ei=Kb5YU4DtNuTD7Ab9rYG4CA&amp;usg=AFQjCNH6sJL0xBGhu4m1lBiXJZc81_g_mA&amp;bvm=bv.65397613,d.ZWU" type="hidden">&nbsp;<small><a href="/about-constituency">What postcode should I use?</a></small></div></form>
+    </div>
+
+    <footer>
+     <p>&copy; Copyright  by Nigel Boor</p>
+    </footer>
+  </div>
+</body>
+</html>

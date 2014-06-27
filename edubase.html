@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>edubase</title>
+
+	</head>
+
+	<body>
+		<div style="border: medium solid ; margin: 8px; padding: 4px; float: left;">
+			<form id="quickSearch" method="post" action="http://www.education.gov.uk/edubase/home.xhtml" target="_blank">
+				<h2>Search EduBase</h2>
+				<div>
+					<p style="padding:2px; margin:0px;">
+						<label>Show me </label>
+						<br>
+						<select id="typeAndPhase.value" name="typeAndPhase.value" class="select">
+							<option value="">[All]</option><option value="ACADEMIES">Academies</option><option value="COLLEGES">Colleges</option><option value="FREE_SCHOOLS">Free Schools</option><option value="INDEPENDANT">Independent Schools</option><option value="LA_MAINTAINED_SCHOOLS">LA Maintained Schools</option><option value="OTHER_TYPES">Other types</option><option value="SPECIAL">Special Schools</option><option value="UNIVERSITIES">Universities</option><option value="WELSH_SCHOOLS">Welsh schools</option>
+						</select>
+						<br>
+					</p>
+					<p style="padding:2px; margin:0px;">
+						<label>Enter a town, locality or postcode </label>
+						<br>
+						<input autocomplete="off" id="townLocalityPostcode.value" name="townLocalityPostcode.value" value="" maxlength="100" type="text">
+						<br>
+					</p>
+					<p style="padding:2px; margin:0px;">
+						<label>Radius </label>
+						<br>
+						<select id="townLocalityPostcode.radius" name="townLocalityPostcode.radius">
+							<!--
+							<option value="">[All]
+							</option>
+							-->
+							<option value="ONE" selected="selected">1 mile </option>
+							<option value="TWO">2 miles </option>
+							<option value="THREE">3 miles </option>
+							<option value="FIVE">5 miles </option>
+							<option value="TEN">10 miles </option>
+							<option value="FIFTEEN">15 miles </option>
+						</select>
+						<br>
+					</p>
+					<p style="padding:2px; margin:0px;">
+						<label>Establishment name </label>
+						<br>
+						<input autocomplete="off" id="establishmentName.value" name="establishmentName.value" value="" maxlength="100" type="text">
+						<br>
+					</p>
+				</div>
+				<p style="padding:2px; margin:0px;">
+					<input value="Search" name="changeFilter" type="submit">
+				</p>
+			</form>
+		</div>
+
+	</body>
+</html>
+

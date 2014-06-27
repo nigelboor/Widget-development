@@ -1,0 +1,93 @@
+<script type="text/javascript" src="http://www.edubase.gov.uk/dwr/engine.js"></script>
+<script type="text/javascript" src="http://www.edubase.gov.uk/dwr/interface/predictiveSearchService.js"></script>
+<script type="text/javascript" src="http://www.edubase.gov.uk/js/autocomplete/Autocompleter.js"></script>
+<script type="text/javascript" src="http://www.edubase.gov.uk/js/autocomplete/Autocompleter.Local.js"></script>
+<script type="text/javascript" src="http://www.edubase.gov.uk/js/autocomplete/Observer.js"></script>
+<script type="text/javascript" src="http://www.edubase.gov.uk/js/autocomplete/Autocompleter_init.js"></script>
+<style type="text/css">p { margin-top: 0px; padding-top: 0px; top: 0px; margin-bottom: 0px; padding-bottom: 0px; bottom: 0px; } 
+</style>
+<script type="text/javascript">
+                   var contextPath = "";
+         </script>
+<div style="border: medium solid ; margin: 8px; padding: 4px; float: right;">  
+  <form id="quickSearch" action="http://www.edubase.gov.uk/home.xhtml" method="post" target="_blank">    
+    <table cellpadding="4" cellspacing="0">      
+      <tbody>        
+        <tr>          
+          <td style="vertical-align: top;"> <h2>Search EduBase</h2>            
+            <img alt="" src="http://www.edubase.gov.uk/images/dcsf_logo_new.gif" align="left"><br clear="all">            
+            <img src="http://www.edubase.gov.uk/images/logo_new.gif" alt="" align="left">            
+            <br> </td><td>            
+            <div>              
+              <p style="padding:2px; margin:0px;">                
+                <label>Show me                 
+                </label>                
+                <br>                
+                <select id="typeAndPhase.value" name="typeAndPhase.value">                  
+                  <option value="">[All]                   
+                  </option>                  
+                  <option value="MAINTAINED_PRIMARY">Maintained Primary Schools                   
+                  </option>                  
+                  <option value="MAINTAINED_SECONDARY">Maintained Secondary Schools                   
+                  </option>                  
+                  <option value="ACADEMIES_AND_CTC">Academies and CTCs                   
+                  </option>                  
+                  <option value="SPECIAL">Special Schools                   
+                  </option>                  
+                  <option value="INDEPENDANT">Independent Schools                   
+                  </option>                  
+                  <option value="UNIVERSITIES">Universities                   
+                  </option>                  
+                  <option value="COLLEGES">Colleges                   
+                  </option>                
+                </select>                
+              </p>              
+              <p style="padding:2px; margin:0px;">                
+                <label>Enter a town, locality or postcode                 
+                </label>                
+                <br>                
+                <input autocomplete="off" id="townLocalityPostcode.value" name="townLocalityPostcode.value" value="" maxlength="100" type="text">                
+              </p>              
+              <p style="padding:2px; margin:0px;">                
+                <label>Radius                 
+                </label>                
+                <br>                
+                <select id="townLocalityPostcode.radius" name="townLocalityPostcode.radius">                  
+                  <option value="">[All]                   
+                  </option>                  
+                  <option value="ONE">1 mile                   
+                  </option>                  
+                  <option value="TWO">2 miles                   
+                  </option>                  
+                  <option value="THREE">3 miles                   
+                  </option>                  
+                  <option value="FIVE">5 miles                   
+                  </option>                  
+                  <option value="TEN">10 miles                   
+                  </option>                  
+                  <option value="FIFTEEN">15 miles                   
+                  </option>                
+                </select>                
+              </p>              
+              <p style="padding:2px; margin:0px;">                
+                <label>Establishment name                 
+                </label>                
+                <br>                
+                <input autocomplete="off" id="establishmentName.value" name="establishmentName.value" value="" maxlength="100" type="text">                
+              </p>            
+            </div> </td> <td><br clear="all">            
+            <div>            
+            </div> </td>        
+        </tr>        
+        <tr>          
+          <td style="vertical-align: top;">            
+            <br> </td><td>            
+            <p style="padding:2px; margin:0px;">              
+              <input value="Search" name="changeFilter" type="submit">            
+            </p> </td> <td>            
+            <br> </td>        
+        </tr>      
+      </tbody>    
+    </table>  
+  </form>
+</div>

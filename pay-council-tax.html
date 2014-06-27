@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <style type="text/css">
+/*<![CDATA[*/
+    div.c2 {DISPLAY: none; VISIBILITY: hidden}
+    div.c1 {DISPLAY: block; VISIBILITY: visible}
+    /*]]>*/
+    </style>
+  </head>
+  <body>
+    <div class="get-started-intro">
+      <p>
+        Pay Council Tax online or by other methods such as direct debit.
+      </p>
+      <form id="local-locator-form" class="find-location-for-service" method="post" action="https://www.gov.uk/pay-council-tax">
+        <fieldset>
+          <legend class="visuallyhidden">Postcode lookup</legend>
+          <div class="location_error error-notification hidden"></div>
+          <div class="ask_location c1" jquery162019217550871220662="2">
+            <label for="postcode">Enter a UK postcode <input class="postcode" name="postcode"
+            placeholder="e.g. SW1A 2AA" value="" /></label> <input class="button" type="submit"
+            value="Find" />
+            <p class="cookie-container">
+              <span class="sets-cookie"><a title="This form sets a location cookie" href=
+              "https://www.gov.uk/help/cookies/#locationcookies">Sets a cookie</a></span>
+            </p>
+          </div>
+          <div class="finding_location hidden c2">
+            <p>
+              Locating you…
+            </p>
+          </div>
+          <div class="found_location hidden c2">
+            <p class="friendly-name">
+              Your location is set to .<br />
+              <a class="change-location" href="https://www.gov.uk/">Change your location</a>
+            </p>
+          </div>
+        </fieldset>
+      </form>
+      <p id="location-loading" class="hidden">
+        Loading service for ...
+      </p>
+      <p id="get-started" class="get-started hidden">
+        <a class="button" href="https://www.gov.uk/" rel="external" jquery162019217550871220662=
+        "10"><span class="button-content"><span class="call-to-action">Get started</span>
+        <span class="destination">on</span></span> </a>
+      </p>
+      <p id="extendedLabel" class="no-provider-error error-notification hidden"></p>
+    </div>
+  </body>
+</html>
